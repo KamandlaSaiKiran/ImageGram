@@ -15,6 +15,11 @@ const options = {
     servers: [
       {
         url: 'http://localhost:3000/api/v1',
+        description: 'Local development server'
+      },
+      {
+        url: 'https://imagegram-xoqj.onrender.com/api/v1',
+        description: 'Production server (Render)'
       },
 
     ],
