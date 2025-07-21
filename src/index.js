@@ -14,7 +14,6 @@ app.listen(PORT,(req,res)=>{
 app.use(express.json());
 app.use(express.text());
 
-
 app.use('/api', apiRouter);//request_raised-->cloudinary_setup-->middleware
 const specs = swaggerJSDoc(swaggerOptions);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
